@@ -7,16 +7,34 @@
     <title>Box Model / Margin & Padding</title>
 </head>
 <style>
+    /* CSS Resets */
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .box {
+        background: #f4f4f4;
+        border: #777 solid;
+        width: 500px;
+        padding: 20px;
+        margin: 20px;
+        padding-top: 10px;
+    }
+
+    .box p {
+        margin: 0;
+    }
 </style>
 <body>
     <div class="box">
+        <h3>Box One</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos natus amet, incidunt dicta vitae numquam esse similique nam cum aut?</p>
     </div>
     <div class="box">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos natus amet, incidunt dicta vitae numquam esse similique nam cum aut?</p>
-    </div>
-    <div class="box">
+        <h3>Box Two</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos natus amet, incidunt dicta vitae numquam esse similique nam cum aut?</p>
     </div>
 </body>
